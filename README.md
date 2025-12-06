@@ -55,6 +55,7 @@ I'm focused on continuing to refine my skills in responsive web design, specific
 
 ### Useful resources
 
+- [Netlify - Hosting & Deployment](https://netlify.com/).
 - [Getform - Form backend](https://getform.io).
 - [Optimizilla - Image optimizer](https://imagecompressor.com).
 - [BrowserStack - Online Px to Rem Converter](https://www.browserstack.com/free-tools/px-to-rem-converter).
