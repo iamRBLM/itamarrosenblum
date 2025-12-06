@@ -48,7 +48,8 @@ This is a solution to the Personal Portfolio project on HackerU. This project se
 - CSS Variables.
 - CSS Flexbox.
 - CSS Media Queries.
-
+- JavaScript.
+- 
 ### Continued development
 
 I'm focused on continuing to refine my skills in responsive web design, specifically mastering CSS Flexbox and Grid techniques to create even more complex and maintainable layouts. I also plan to focus on performance optimization like CSS minification and lazy loading in future projects.
