@@ -1,0 +1,210 @@
+/* ================================
+/* Flexbox */
+/* ================================ */
+.u-flex {
+  display: flex;
+}
+
+.u-flex-j-center {
+  justify-content: center;
+}
+
+.u-flex-j-between {
+  justify-content: space-between;
+}
+
+.u-flex-align-center {
+  align-items: center;
+}
+
+.u-flex-column {
+  flex-direction: column;
+}
+
+.u-flex-wrap {
+  flex-wrap: wrap;
+}
+
+.gap-lg {
+  gap: 30px;
+}
+
+.gap-md {
+  gap: 10px;
+}
+
+.gap-sm {
+  gap: 5px;
+}
+
+/* ================================
+/* Layout */
+/* ================================ */
+.h-100vh {
+  height: 100vh;
+}
+
+.max-w-465 {
+  max-width: 465px;
+}
+
+/* ================================
+/* Margin */
+/* ================================ */
+.m-l-xxl {
+  margin-left: 250px;
+}
+
+.m-l-lg {
+  margin-left: 70px;
+}
+
+.m-y-md {
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+.m-t-sm {
+  margin-top: 20px;
+}
+
+.m-y-sm {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.m-y-xs {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+/* ================================
+/* Padding */
+/* ================================ */
+.p-t-xl {
+  padding-top: 50px;
+}
+
+.p-t-sm {
+  padding-top: 10px;
+}
+
+.p-lg {
+  padding: 35px;
+}
+
+.p-sm {
+  padding: 8px;
+}
+
+.p-l-sm {
+  padding-left: 15px;
+}
+
+/* ================================
+/* Font size */
+/* ================================ */
+.text-xxl {
+  font-size: 3.3rem;
+}
+
+.text-2lg {
+  font-size: 1.6rem;
+}
+
+.text-lg {
+  font-size: 1.25rem;
+}
+
+.text-md {
+  font-size: 1.069rem;
+}
+
+.text-sm {
+  font-size: 0.9rem;
+}
+
+.text-xs {
+  font-size: 0.6rem;
+}
+
+/* ================================
+/* Font weight */
+/* ================================ */
+.text-weight-800 {
+  font-weight: 800;
+}
+
+.text-weight-700 {
+  font-weight: 700;
+}
+
+.text-weight-200 {
+  font-weight: 200;
+}
+
+.text-weight-100 {
+  font-weight: 100;
+}
+
+/* ================================
+/* Text style */
+/* ================================ */
+.text-italic {
+  font-style: italic;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-underline {
+  text-decoration: underline;
+}
+
+.text-uppercase {
+  text-transform: uppercase;
+}
+
+/* ================================
+/* Text color */
+/* ================================ */
+.text-pink-strong {
+  color: var(--pink-strong);
+}
+
+.text-pink-soft {
+  color: var(--pink-soft);
+}
+
+.text-pink-pale {
+  color: var(--pink-pale);
+}
+
+/* ================================
+/* Background color */
+/* ================================ */
+.bg-white {
+  background-color: var(--white);
+}
+
+.bg-black {
+  background-color: var(--black);
+}
+
+.bg-pink-dusty {
+  background-color: var(--pink-dusty);
+}
+
+/* ================================
+/* Animation */
+/* ================================ */
+.u-animated-letters span {
+  transition: 0.9s ease-in-out;
+}
+
+.u-animated-letters span:hover {
+  display: inline-block;
+  transform: skewY(20deg);
+  color: var(--pink-soft);
+}

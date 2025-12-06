@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Meta tags -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Documentation for the Skilled e-learning landing page project by Itamar Rosenblum, built using Semantic HTML, CSS Grid/Flexbox, and responsive design techniques."
+    />
+    <meta
+      name="keywords"
+      content="Skilled Landing Page, Frontend Mentor Challenge, Responsive Web Design, CSS Grid, CSS Flexbox, HTML5, Project Documentation, Itamar Rosenblum"
+    />
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="../images/favicon.ico" />
+    <!-- Utilities css -->
+    <link rel="stylesheet" href="../styles/utilities.css" />
+    <!-- Main css -->
+    <link rel="stylesheet" href="../styles/style.css" />
+    <!-- Queries css -->
+    <link rel="stylesheet" href="../styles/media-queries.css" />
+    <title>Skilled Landing Page Project | Itamar Rosenblum Portfolio</title>
+  </head>
+  <body>
+    <header class="hero-section skills-page">
+      <!-- Mobile humburger -->
+      <div class="hero-section_humburger">
+        <button onclick="menuToggle()" class="hero-section_humburger-btn">
+          <ion-icon name="menu" class="hero-section_humburger-icon"></ion-icon>
+        </button>
+      </div>
+      <!-- Main navigation -->
+      <nav
+        class="hero-section_main-nav u-flex u-flex-column u-flex-j-between u-flex-align-center p-lg bg-white"
+      >
+        <!-- Top small logo -->
+        <a
+          href="../index.html"
+          title="Home Page"
+          class="main-nav_logo text-xs text-weight-700 text-center text-pink-strong"
+        >
+          <img src="../images/logo-min.png" alt="Itamar Rosenblum Logo" />
+          Itamar Rosenblum
+        </a>
+        <!-- Main page links -->
+        <ul
+          class="main-nav_list u-flex u-flex-column u-flex-j-center u-flex-align-center gap-lg"
+        >
+          <!-- Home -->
+          <li>
+            <a
+              href="../index.html"
+              title="Home"
+              class="text-sm text-pink-strong"
+              ><ion-icon
+                name="home"
+                class="text-pink-strong bg-white"
+              ></ion-icon>
+              Home
+            </a>
+          </li>
+          <!-- About -->
+          <li>
+            <a href="about.html" title="About" class="text-sm text-pink-strong"
+              ><ion-icon
+                name="person"
+                class="text-pink-strong bg-white"
+              ></ion-icon>
+              About
+            </a>
+          </li>
+          <!-- Skills -->
+          <li>
+            <a
+              href="skills.html"
+              title="Skills"
+              class="text-sm text-pink-strong"
+              ><ion-icon
+                name="settings"
+                class="text-pink-strong bg-white"
+              ></ion-icon>
+              Skills
+            </a>
+          </li>
+          <!-- Projects -->
+          <li>
+            <a
+              href="projects.html"
+              title="Projects"
+              class="text-sm text-pink-strong"
+              ><ion-icon
+                name="code-slash"
+                class="text-pink-strong bg-white"
+              ></ion-icon>
+              Projects
+            </a>
+          </li>
+          <!-- Contact -->
+          <li>
+            <a
+              href="contact.html"
+              title="Contact"
+              class="text-sm text-pink-strong"
+              ><ion-icon
+                name="mail"
+                class="text-pink-strong bg-white"
+              ></ion-icon>
+              Contact
+            </a>
+          </li>
+        </ul>
+        <!-- Dark mode button -->
+        <button onclick="darkModeFn()" class="dark-mode-btn" title="Dark Mode">
+          <ion-icon name="moon" class="dark-mode_icon"></ion-icon>
+        </button>
+      </nav>
+    </header>
+    <!-- Main -->
+    <main class="main-section skills-page u-flex u-flex-align-center">
+      <article class="main-section_content m-l-xxl">
+        <!-- Main title -->
+        <header class="main-section_header p-t-xl">
+          <!-- page title -->
+          <h1
+            class="text-xxl text-weight-800 text-pink-strong u-animated-letters"
+          >
+            <span>S</span><span>k</span><span>i</span><span>l</span
+            ><span>l</span><span>e</span><span>d</span> <span>L</span
+            ><span>a</span><span>n</span><span>d</span><span>i</span
+            ><span>n</span><span>g</span> <span>P</span><span>a</span
+            ><span>g</span><span>e</span>
+          </h1>
+          <p class="m-y-md text-pink-soft text-md max-w-465">
+            This is a solution to the
+            <a
+              href="https://www.frontendmentor.io/challenges/skilled-elearning-landing-page-S1ObDrZ8q"
+              target="_blank"
+              title="Fronend Mentor - Skilled e-learning landing page"
+              class="text-pink-soft text-italic text-underline"
+              >Skilled e-learning landing page challenge on Frontend Mentor</a
+            >. Frontend Mentor challenges help you improve your coding skills by
+            building realistic projects.
+          </p>
+        </header>
+        <!-- First documentation section -->
+        <section class="main-section_documentation">
+          <header>
+            <h2 class="m-y-md text-pink-soft text-2lg">Table of contents</h2>
+          </header>
+          <nav>
+            <!-- Documentation navigation -->
+            <ul
+              class="main-section_documentation-nav u-flex u-flex-column gap-md"
+            >
+              <!-- Overview -->
+              <li>
+                <a
+                  href="#overview"
+                  class="text-pink-soft text-underline"
+                  title="Overview"
+                  >Overview</a
+                >
+                <!-- Nested navigation -->
+                <ul class="p-l-sm u-flex u-flex-column gap-md">
+                  <!-- The challenge -->
+                  <li class="p-t-sm">
+                    <a
+                      href="#the-challenge"
+                      class="text-pink-soft p-t-sm text-underline"
+                      title="The challenge"
+                      >The challenge</a
+                    >
+                  </li>
+                  <!-- Screenshot -->
+                  <li>
+                    <a
+                      href="#screenshot"
+                      class="text-pink-soft text-underline"
+                      title="Screenshot"
+                      >Screenshot</a
+                    >
+                  </li>
+                  <!-- Links -->
+                  <li>
+                    <a
+                      href="#links"
+                      class="text-pink-soft text-underline"
+                      title="Links"
+                      >Links</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <!-- My process -->
+              <li>
+                <a
+                  href="#my-process"
+                  class="text-pink-soft text-underline"
+                  title="My process"
+                  >My process</a
+                >
+                <!-- Nested navigation -->
+                <ul class="p-l-sm u-flex u-flex-column gap-md">
+                  <!-- Built with -->
+                  <li class="p-t-sm">
+                    <a
+                      href="#built-with"
+                      class="text-pink-soft text-underline"
+                      title="Built with"
+                      >Built with</a
+                    >
+                  </li>
+                  <!-- What I learned -->
+                  <li>
+                    <a
+                      href="#what-i-learned"
+                      class="text-pink-soft text-underline"
+                      title="What I learned"
+                      >What I learned</a
+                    >
+                  </li>
+                  <!-- Continued development -->
+                  <li>
+                    <a
+                      href="#continued-development"
+                      class="text-pink-soft text-underline"
+                      title="Continued development"
+                      >Continued development</a
+                    >
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </nav>
+        </section>
+        <!-- Second documentation section -->
+        <section class="main-section_documentation">
+          <!-- overview -->
+          <header>
+            <h2 class="m-y-md text-pink-soft text-2lg" id="overview">
+              Overview
+            </h2>
+          </header>
+          <!-- The callenge -->
+          <article>
+            <h3 class="m-y-md text-pink-soft text-lg" id="the-challenge">
+              The challenge
+            </h3>
+            <p class="m-y-sm text-pink-soft text-md max-w-465">
+              Users should be able to:
+            </p>
+            <ul class="text-pink-soft text-md">
+              <li>
+                View the optimal layout depending on their device's screen size.
+              </li>
+              <li>See hover states for interactive elements.</li>
+            </ul>
+          </article>
+          <!-- Screenshot -->
+          <article>
+            <h3 class="m-y-md text-pink-soft text-lg" id="screenshot">
+              Screenshot
+            </h3>
+            <ul class="main-section_project-gallery u-flex gap-md list-none">
+              <li>
+                <img
+                  src="../images/elarning-desktop-preview-min.png"
+                  alt="Skilled Project In Desktop View"
+                  title="Skilled Project In Desktop View"
+                />
+              </li>
+              <li>
+                <img
+                  src="../images/elarning-mobile-preview-min.png"
+                  alt="Skilled Project In Mobile View"
+                  title="Skilled Project In Mobile View"
+                />
+              </li>
+            </ul>
+          </article>
+          <!-- Links -->
+          <article>
+            <h3 class="m-y-md text-pink-soft text-lg" id="links">Links</h3>
+            <nav>
+              <ul class="u-flex u-flex-column gap-md">
+                <li>
+                  <a
+                    href="https://skilled-elearning-landing-page-prj.netlify.app"
+                    class="text-pink-soft text-underline"
+                    title="View Live Project"
+                    target="_blank"
+                    >View Live Project.</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://github.com/iamRBLM/skilled-elearning-landing-page"
+                    class="text-pink-soft text-underline"
+                    title="Source Code (GitHub)"
+                    target="_blank"
+                    >Source Code (GitHub).</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://www.frontendmentor.io/solutions/skilled-e-learning-landing-page-yZW9D5ORAZ"
+                    class="text-pink-soft text-underline"
+                    title="Frontend Mentor Solution"
+                    target="_blank"
+                    >Frontend Mentor Solution.</a
+                  >
+                </li>
+              </ul>
+            </nav>
+          </article>
+        </section>
+        <!-- Third documentation section -->
+        <section class="main-section_documentation">
+          <!-- My process -->
+          <header>
+            <h2 class="m-y-md text-pink-soft text-2lg" id="my-process">
+              My process
+            </h2>
+          </header>
+          <!-- Built with -->
+          <article>
+            <h3 class="m-y-md text-pink-soft text-lg" id="built-with">
+              Built with:
+            </h3>
+            <ul class="u-flex u-flex-column gap-md">
+              <li>Semantic HTML5 markup</li>
+              <li>CSS Variables.</li>
+              <li>CSS Grid.</li>
+              <li>CSS Flexbox.</li>
+            </ul>
+          </article>
+          <!-- What I learned -->
+          <article>
+            <h3 class="m-y-md text-pink-soft text-lg" id="what-i-learned">
+              What I Learned
+            </h3>
+            <p class="m-y-md text-pink-soft text-md max-w-465">
+              I learned to make the course cards responsive by using CSS Grid
+              with the
+              <code class="bg-pink-dusty text-pink-soft text-sm"
+                >grid-template-columns</code
+              >
+              property, using the
+              <code class="bg-pink-dusty text-pink-soft text-sm">repeat()</code>
+              and
+              <code class="bg-pink-dusty text-pink-soft text-sm">minmax()</code>
+              functions for flexible layout control.
+            </p>
+            <pre class="bg-pink-dusty text-sm text-pink-soft">
+              <code>
+                .courses .container.grid {
+                  grid-template-columns: repeat(auto-fit,
+                  minmax(352px, 1fr)); gap: 32px;
+                }
+                
+                .courses .courses-card {
+                  position:relative;
+                  width: 100%;
+                  height: 322px;
+                  padding: 64px 32px 40px;
+                  border-radius: 15px;
+                  box-shadow: 0 25px 50px rgba(6, 22, 141, 0.0442);
+                }
+              </code>
+            </pre>
+            <p class="m-y-md text-pink-soft text-md max-w-465">
+              I also learned how to write clean HTML and CSS code, using CSS
+              utilities classes and CSS Variables (custom properties), for
+              different styles, such as:
+            </p>
+            <ul class="u-flex u-flex-column gap-md">
+              <li>Background color and Text color.</li>
+              <li>Font sizes and Text styles.</li>
+              <li>CSS Grid and CSS Flexbox.</li>
+              <li>Padding and Margin properties.</li>
+            </ul>
+          </article>
+          <!-- Continued development -->
+          <article>
+            <h3
+              class="m-y-md text-pink-soft text-lg"
+              id="continued-development"
+            >
+              Continued development
+            </h3>
+            <p class="m-y-md text-pink-soft text-md max-w-465">
+              I will keep improving my HTML and CSS skills and learning new
+              tricks and techniques. I will be focusing specifically on
+              mastering CSS Flexbox and Grid techniques and responsive web
+              design.
+            </p>
+          </article>
+        </section>
+      </article>
+    </main>
+    <footer></footer>
+
+    <!-- Main js  -->
+    <script src="../js/js.js"></script>
+    <!-- Icon library: Ionicons (https://ionic.io/ionicons) -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>

@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Meta tags -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="View the professional portfolio and latest web development projects by Full Stack Developer Itamar Rosenblum. See examples of front-end and full-stack work."
+    />
+    <meta
+      name="keywords"
+      content="Itamar Rosenblum Projects, Web Developer Portfolio, Full Stack Projects, Frontend Work, Skilled Landing Page, Workit Landing Page, Coding Examples"
+    />
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="../images/favicon.ico" />
+    <!-- Utilities css -->
+    <link rel="stylesheet" href="../styles/utilities.css" />
+    <!-- Main css -->
+    <link rel="stylesheet" href="../styles/style.css" />
+    <!-- Queries css -->
+    <link rel="stylesheet" href="../styles/media-queries.css" />
+    <title>Projects Portfolio | Itamar Rosenblum, Web Developer</title>
+  </head>
+  <body>
+    <header class="hero-section projects-page">
+      <!-- Mobile humburger -->
+      <div class="hero-section_humburger">
+        <button onclick="menuToggle()" class="hero-section_humburger-btn">
+          <ion-icon name="menu" class="hero-section_humburger-icon"></ion-icon>
+        </button>
+      </div>
+      <!-- Main navigation -->
+      <nav
+        class="hero-section_main-nav u-flex u-flex-column u-flex-j-between u-flex-align-center p-lg bg-white"
+      >
+        <!-- Top small logo -->
+        <a
+          href="../index.html"
+          title="Home Page"
+          class="main-nav_logo text-xs text-weight-700 text-center text-pink-strong"
+        >
+          <img src="../images/logo-min.png" alt="Itamar Rosenblum Logo" />
+          Itamar Rosenblum
+        </a>
+        <!-- Main page links -->
+        <ul
+          class="main-nav_list u-flex u-flex-column u-flex-j-center u-flex-align-center gap-lg"
+        >
+          <!-- Home -->
+          <li>
+            <a
+              href="../index.html"
+              title="Home"
+              class="text-sm text-pink-strong"
+              ><ion-icon
+                name="home"
+                class="text-pink-strong bg-white"
+              ></ion-icon>
+              Home
+            </a>
+          </li>
+          <!-- Aboout -->
+          <li>
+            <a href="about.html" title="About" class="text-sm text-pink-strong"
+              ><ion-icon
+                name="person"
+                class="text-pink-strong bg-white"
+              ></ion-icon>
+              About
+            </a>
+          </li>
+          <!-- Skills -->
+          <li>
+            <a
+              href="skills.html"
+              title="Skills"
+              class="text-sm text-pink-strong"
+              ><ion-icon
+                name="settings"
+                class="text-pink-strong bg-white"
+              ></ion-icon>
+              Skills
+            </a>
+          </li>
+          <!-- Projects -->
+          <li>
+            <a
+              href="projects.html"
+              title="Projects"
+              class="text-sm text-pink-strong"
+              ><ion-icon
+                name="code-slash"
+                class="text-pink-strong bg-white"
+              ></ion-icon>
+              Projects
+            </a>
+          </li>
+          <!-- Contact -->
+          <li>
+            <a
+              href="contact.html"
+              title="Contact"
+              class="text-sm text-pink-strong"
+              ><ion-icon
+                name="mail"
+                class="text-pink-strong bg-white"
+              ></ion-icon>
+              Contact
+            </a>
+          </li>
+        </ul>
+        <!-- Dark mode button -->
+        <button onclick="darkModeFn()" class="dark-mode-btn" title="Dark Mode">
+          <ion-icon name="moon" class="dark-mode_icon"></ion-icon>
+        </button>
+      </nav>
+    </header>
+    <!-- Main -->
+    <main class="main-section projects-page u-flex u-flex-align-center h-100vh">
+      <article class="main-section_content m-l-xxl">
+        <header class="main-section_header p-t-xl">
+          <!-- Main title -->
+          <h1
+            class="text-xxl text-weight-800 text-pink-strong u-animated-letters"
+          >
+            <span>M</span><span>y</span> <span>P</span><span>r</span
+            ><span>o</span><span>j</span><span>e</span><span>c</span
+            ><span>t</span><span>s</span>
+          </h1>
+        </header>
+        <!-- First paragraph -->
+        <p class="m-y-md text-pink-soft text-md max-w-465">
+          Here you can see some of my latest projects.
+        </p>
+
+        <!-- Projects container -->
+        <div class="main-section_projects u-flex gap-lg">
+          <ul class="u-flex u-flex-wrap gap-md">
+            <!-- First project: Skilled landing page -->
+            <li>
+              <a href="skilled-landing-page.html">
+                <img
+                  src="../images/elarning-desktop-preview-min.png"
+                  alt="Skilled Project Preview"
+              /></a>
+            </li>
+            <!-- Second project: Wortkit landing page -->
+            <li>
+              <a href="workit-landing-page.html">
+                <img
+                  src="../images/workit-desktop-view-min.png"
+                  alt="Workit Project Preview"
+              /></a>
+            </li>
+          </ul>
+        </div>
+      </article>
+    </main>
+    <footer></footer>
+
+    <!-- Main js -->
+    <script src="../js/js.js"></script>
+    <!-- Icon library: Ionicons (https://ionic.io/ionicons) -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>

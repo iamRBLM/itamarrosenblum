@@ -1,0 +1,434 @@
+/* ================================
+/* Google fonts */
+/* ================================ */
+@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+/* ================================
+/* Variables */
+/* ================================ */
+:root {
+  --pink-bold: #ff3f7f;
+  --pink-strong: #f37295;
+  --pink-soft: #f19aaf;
+  --pink-pale: #f3b1c2;
+  --pink-dusty: #fbd5df;
+  --pink-ultra-light: #ffe8ee;
+  --black: #0f0e0e;
+  --gray: #a0a0a0;
+  --white: #ffffff;
+}
+
+/* =======================
+/* General styles */
+/* ======================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  font-size: 16px;
+  font-family: "Roboto", sans-serif;
+  color: var(--black);
+  background-color: var(--pink-ultra-light);
+}
+
+a:link:not(.text-underline),
+a:visited,
+a:hover,
+a:active {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+h1 {
+  position: relative;
+}
+
+h1::before {
+  content: "</h1>";
+  display: block;
+  position: absolute;
+  top: -15px;
+  left: -15px;
+  font-size: 0.3em;
+  font-weight: normal;
+  font-family: "Caveat", cursive;
+  color: var(--pink-soft);
+}
+
+h1::after {
+  content: "</h1>";
+  display: block;
+  position: absolute;
+  left: -15px;
+  font-size: 0.3em;
+  font-weight: normal;
+  font-family: "Caveat", cursive;
+  color: var(--pink-soft);
+}
+
+/* ================================
+/* Scrollbar */
+/* ================================ */
+/* Overall width */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+/* Back (Track) */
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+/* Front (Thumb) */
+::-webkit-scrollbar-thumb {
+  border-radius: 8px;
+  background-color: var(--pink-pale);
+}
+
+/* On hover */
+::-webkit-scrollbar-thumb:hover {
+  background-color: var(--pink-soft);
+}
+
+/* ================================
+/* Selection */
+/* ================================ */
+::selection {
+  color: var(--pink-ultra-light);
+  background-color: var(--pink-pale);
+}
+
+/* ================================
+/* Buttons */
+/* ================================ */
+.btn {
+  display: inline-block;
+  padding: 10px 25px;
+  border: 2px solid var(--pink-strong);
+  border-radius: 5px;
+  outline: none;
+  font-size: 0.9em;
+  color: var(--pink-strong);
+  background-color: transparent;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.btn:hover {
+  color: var(--white);
+  background-color: var(--pink-strong);
+}
+
+.dark-mode-btn {
+  border: none;
+  font-size: 1.4em;
+  color: var(--pink-strong);
+  background-color: transparent;
+  cursor: pointer;
+}
+
+/* ================================
+/* Index page */
+/* ================================ */
+.hero-section {
+  position: relative;
+  width: 100%;
+}
+
+.hero-section_box-right {
+  width: 500px;
+  height: 450px;
+  transform: rotate(20deg);
+  background: url("../images/hero-image-min.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 0;
+  opacity: 0.6;
+  transition: all 0.9s ease-in-out;
+}
+
+.hero-section_contact .btn:hover {
+  scale: 1.1;
+  rotate: -2deg;
+}
+
+/* ================================
+/* Main nav */
+/* ================================ */
+.hero-section_main-nav {
+  width: 80px;
+  height: 100vh;
+  position: fixed;
+}
+
+.hero-section_main-nav img {
+  width: 35px;
+  transition: all 0.3s ease-in-out;
+}
+
+.hero-section_main-nav img:hover {
+  rotate: -7deg;
+  opacity: 0.8;
+}
+
+.main-nav_list li a {
+  position: relative;
+}
+
+.main-nav_list li a ion-icon {
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 1px;
+  scale: 1.3;
+}
+
+.main-nav_list li:hover ion-icon {
+  display: none;
+}
+
+.hero-section_humburger {
+  display: none;
+}
+
+/* ================================
+/* About page */
+/* ================================ */
+.main-section_profile-img {
+  width: 180px;
+  border: 3px dotted var(--pink-soft);
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.9s ease-in-out;
+}
+
+.main-section_profile-img:hover {
+  rotate: -360deg;
+}
+
+.main-section_content figure {
+  position: relative;
+  width: 180px;
+  border-radius: 50%;
+}
+
+.main-section_content figure:hover::after {
+  content: "Hello Traveler...";
+  display: block;
+  padding: 8px;
+  border-radius: 10px;
+  position: absolute;
+  right: -80px;
+  top: 50px;
+  font-size: 0.9rem;
+  color: var(--pink-soft);
+  background-color: var(--white);
+}
+
+.main-section_content figure:hover::before {
+  content: "";
+  position: absolute;
+  top: 32%;
+  right: 19%;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent var(--white) transparent transparent;
+  z-index: 1;
+}
+
+.main-section_arrow-img {
+  position: relative;
+}
+
+.main-section_arrow-img img {
+  width: 150px;
+  position: absolute;
+  bottom: 70px;
+  right: 130px;
+}
+
+/* ================================
+/* Skills page */
+/* ================================ */
+.main-section_skills {
+  width: 550px;
+}
+
+.main-section_skills-card {
+  width: 200px;
+  height: 200px;
+  border: 1px solid var(--pink-soft);
+  border-radius: 10px;
+  cursor: pointer;
+  direction: ltr;
+  transition: all 0.9s ease-in-out;
+}
+
+.main-section_skills-card:hover {
+  transform: rotateY(190deg);
+}
+
+.main-section_skills-card ul {
+  display: none;
+  padding: 5px;
+  list-style-type: decimal;
+  list-style-position: inside;
+}
+
+.main-section_skills-card:hover h2 {
+  display: none;
+}
+
+.main-section_skills-card:hover ul {
+  display: flex;
+  transform: rotateY(-190deg);
+}
+
+/* ================================
+/* Projects page*/
+/* ================================ */
+.main-section_projects li {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.main-section_projects li img {
+  width: 100%;
+  height: 100%;
+  scale: 1.2;
+  transition: all 0.9s ease-in-out;
+  opacity: 0.7;
+}
+
+.main-section_projects li:hover img {
+  scale: 1.5;
+  opacity: 1;
+}
+
+.main-section_projects a::before {
+  content: "View Project";
+  display: none;
+  width: 50px;
+  height: 50px;
+  padding: 15px;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 1;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  line-height: 1.5em;
+  font-size: 0.9rem;
+  color: var(--pink-soft);
+  background-color: var(--pink-ultra-light);
+}
+
+.main-section_projects a:hover::before {
+  display: block;
+  opacity: 0.9;
+}
+
+/* ================================
+/* Documentation pages */
+/* ================================ */
+.main-section_documentation a:hover {
+  color: var(--pink-pale);
+}
+
+.main-section_documentation ul:not(.list-none) {
+  list-style: circle;
+  list-style-position: inside;
+  color: var(--pink-soft);
+}
+
+.main-section_documentation img {
+  width: 350px;
+  height: 350px;
+  border-radius: 5px;
+}
+
+.main-section_documentation code {
+  padding: 1px 5px;
+  border-radius: 5px;
+}
+
+.main-section_documentation pre {
+  border-radius: 5px;
+  overflow-x: scroll;
+}
+
+.main-section_documentation pre code {
+  position: relative;
+  right: 110px;
+}
+
+/* ================================
+/* Contact page */
+/* ================================ */
+.main-section_form form label {
+  display: block;
+}
+
+.main-section_form form input:not(.btn),
+.main-section_form form textarea {
+  border: 1px solid #f19aaf;
+  background-color: transparent;
+}
+
+.main-section_form form input,
+.main-section_form form textarea {
+  width: 350px;
+  border-radius: 5px;
+  outline: 1px solid transparent;
+  transition: all 0.3s ease-in-out;
+}
+
+.main-section_form form input:hover,
+.main-section_form form textarea:hover {
+  outline: 1px solid var(--pink-soft);
+}
+
+.main-section_form form input:focus,
+.main-section_form form textarea:focus {
+  outline: 1px solid var(--pink-soft);
+}
+
+.main-section_form form input,
+.main-section_form form textarea {
+  padding: 10px;
+}
+
+.main-section_form form textarea {
+  height: 100px;
+  resize: none;
+  font-family: "Roboto", sans-serif;
+}
+
+::placeholder {
+  color: var(--pink-pale);
+}
+
+.main-section_social-nav a {
+  display: inline-block;
+  transition: 0.3s;
+}
+
+.main-section_social-nav a:hover {
+  scale: 1.2;
+  rotate: -8deg;
+  color: var(--pink-soft);
+}
