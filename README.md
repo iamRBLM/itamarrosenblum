@@ -48,6 +48,7 @@ This is a solution to the Personal Portfolio project on HackerU. This project se
 - CSS Variables.
 - CSS Flexbox.
 - CSS Media Queries.
+- JavaScript.
 
 ### Continued development
 
