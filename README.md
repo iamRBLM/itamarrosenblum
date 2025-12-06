@@ -1,4 +1,4 @@
-# Frontend Mentor - Workit landing page solution
+# HackerU - Personal Portfolio Project
 
 This is a solution to the Personal Portfolio project on HackerU. This project served as an excellent exercise to practice Front-end Development principles, focusing heavily on responsive design and modern CSS techniques, which are key areas of my personal developer portfolio.
 
