@@ -17,16 +17,16 @@ function menuToggle() {
 
 // Encapsulation: Dark mode function
 (function () {
-  // Access the localstorage key
-  let darkmode = localStorage.getItem("darkmode");
+  // Target the html element
+  let html = document.querySelector("html");
   // Target the button
   const darkModeBtn = document.getElementById("dark-mode-btn");
   // Target the ion-icon element
   let darkModeIcon = document.querySelector(".dark-mode_icon");
-  // Target the html element
-  let html = document.querySelector("html");
   // Target all elements with class bg-white
   let bgWhite = document.querySelectorAll(".bg-white");
+  // Access the localstorage key
+  let darkmode = localStorage.getItem("darkmode");
 
   // Arrow function: enable dark mode
   const enableDarkmode = () => {
@@ -59,7 +59,7 @@ function menuToggle() {
   // when page loads
   if (darkmode === "active") enableDarkmode();
 
-  // Event lisitner: when button is clicked event lisitener
+  // Event lisitner: when button is clicked
   darkModeBtn.addEventListener("click", () => {
     darkmode = localStorage.getItem("darkmode");
     darkmode !== "active" ? enableDarkmode() : disableDarkMode();
