@@ -59,7 +59,9 @@ I'm focused on continuing to refine my skills in responsive web design, specific
 - [Netlify - Hosting & Deployment](https://netlify.com/).
 - [Getform - Form backend](https://getform.io).
 - [Optimizilla - Image optimizer](https://imagecompressor.com).
-- [BrowserStack - Online Px to Rem Converter](https://www.browserstack.com/free-tools/px-to-rem-converter).
+- [Elementor - Online Px to Rem Converter](https://elementor.com/blog/px-to-rem).
+- [Elementor - Online CSS Minifier](https://elementor.com/it/tools/free-css-minifier).
+- [Elementor - Online JS Minifier](https://elementor.com/tools/javascript-minifier).
 - [Color Hunt - Color Platters](https://colorhunt.co).
 
 ## Author
