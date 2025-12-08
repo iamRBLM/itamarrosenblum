@@ -22,7 +22,7 @@
     <link rel="stylesheet" href="../styles/media-queries.css" />
     <title>Skilled Landing Page Project | Itamar Rosenblum Portfolio</title>
   </head>
-  <body>
+  <body id="top">
     <header class="hero-section skills-page">
       <!-- Mobile humburger -->
       <div class="hero-section_humburger">
@@ -40,7 +40,11 @@
           title="Home Page"
           class="main-nav_logo text-xs text-weight-700 text-center text-pink-strong"
         >
-          <img src="../images/logo-min.png" alt="Itamar Rosenblum Logo" />
+          <img
+            src="../images/logo-min.png"
+            alt="Itamar Rosenblum Logo"
+            loading="lazy"
+          />
           Itamar Rosenblum
         </a>
         <!-- Main page links -->
@@ -268,6 +272,7 @@
                   src="../images/elarning-desktop-preview-min.png"
                   alt="Skilled Project In Desktop View"
                   title="Skilled Project In Desktop View"
+                  loading="lazy"
                 />
               </li>
               <li>
@@ -275,6 +280,7 @@
                   src="../images/elarning-mobile-preview-min.png"
                   alt="Skilled Project In Mobile View"
                   title="Skilled Project In Mobile View"
+                  loading="lazy"
                 />
               </li>
             </ul>
@@ -395,6 +401,12 @@
             </p>
           </article>
         </section>
+        <!-- Jump to top container -->
+        <div class="main-section_bookmark">
+          <a href="#top" class="text-pink-strong text-lg" title="Jump to Top"
+            ><ion-icon name="chevron-up"></ion-icon
+          ></a>
+        </div>
       </article>
     </main>
     <footer></footer>
